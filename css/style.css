@@ -10,6 +10,10 @@
     clear: both;
 } 
 
+.fl-right{
+    float: right;
+}
+
 .relative{
     position: relative;
 } 
@@ -19,8 +23,11 @@
 
 .flex{   
     display: flex; 
-    flex-wrap: wrap;
-
+    flex-wrap: wrap; 
+    gap: 5px;  
+    flex-shrink: 1; 
+    flex-direction: row; 
+    justify-content: center;
 }
 
     
@@ -31,7 +38,8 @@
 
 header .photo-view{
     border: 2px solid black; 
-    background-color: black;
+    background-color: black; 
+    width: 100vw;
     height: 10vh;
 }
 
@@ -45,6 +53,7 @@ header .expand, .option{
     background-color: silver;
     padding: .5rem;
     border-radius: 10px; 
+ 
     
 }
 
@@ -69,9 +78,20 @@ main .container-photo{
 main .container-photo .photo{ 
     border: 2px solid black; 
     height: 20%;
+    min-width: 300px;
+    width: 10%; 
+    background-image: url(https://images.unsplash.com/photo-1447753072467-2f56032d1d48?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80); 
+    background-size: cover ;
+    background-repeat: no-repeat; 
+    background-position: center; 
+    
+} 
 
-    width: 20%; 
-    /* background-image: url(); */
+main .container-photo .photo p{
+    bottom: 0; 
+    background-color: black;
+    opacity: .5; 
+    color: white;
 }
 
 
