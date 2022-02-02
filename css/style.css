@@ -12,6 +12,10 @@
 
 .fl-right{
     float: right;
+} 
+
+.fl-left{
+    float: left;
 }
 
 .relative{
@@ -26,9 +30,10 @@
     flex-wrap: wrap; 
     gap: 5px;  
     flex-shrink: 1; 
-    flex-direction: row; 
+    
     justify-content: center; 
-    justify-content: space-between;
+    /* justify-content: space-between;  */
+    align-items: center;
 }
 
     
@@ -112,30 +117,31 @@ footer .general-setting{
     border: 2px solid royalblue; 
     width: 100%;
     height: 10vh;
+
+    vertical-align: middle;
 }  
 
 
-footer .general-setting .nav .nav-left{
-    border: 2px solid blue; 
-    height: 10vh; 
+footer .general-setting .flex{  
+    /* align-items: center; */
+    /* justify-content: center;  */
+    
+    justify-content: space-between;
+} 
 
-    width: 20%;
+footer .general-setting .nav .nav-left, .nav-center{ 
+    /* border: 2px solid black;  */
+    font-size: 2rem; 
+    height: 10vh;
+    text-align: center; 
 } 
 
 footer .general-setting .nav .nav-center{
-    border: 2px solid blue; 
-    height: 10vh; 
+    border: 2px solid black; 
+    width: 50%; 
 
-    width: 40%;
-} 
-
-footer .general-setting .nav .nav-right{
-    border: 2px solid blue; 
-    height: 10vh; 
-
-    width: 20%;
 }
-
+ 
 
 
 
