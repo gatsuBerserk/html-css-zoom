@@ -10,9 +10,21 @@
     clear: both;
 } 
 
-.flex{
-    display: flex;
+.relative{
+    position: relative;
+} 
+.absolute {
+    position: absolute;
 }
+
+.flex{ 
+    flex-wrap: wrap;
+    display: flex; 
+    flex-direction: row; 
+    align-items: center;
+}
+
+/* Header */
 
 header .photo-view{
     border: 2px solid black; 
@@ -33,12 +45,33 @@ header .expand, .option{
     
 }
 
+/* /Header */
+ 
 
-main .content{
-    border: 2px solid tomato; 
-
+/* Main */
+main .content{ 
+    background-color: tomato;
     height: 80vh;
+} 
+
+main .container-photo{ 
+    border: 2px solid yellow; 
+    height: 100%; 
+    
+    width: 80%; 
+    margin: 0 auto; 
+    overflow: auto;
+
+  
 }
+
+
+
+
+
+
+
+
 
 footer .general-setting{
     border: 2px solid royalblue; 
