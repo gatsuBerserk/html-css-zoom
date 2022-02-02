@@ -30,9 +30,7 @@
     flex-wrap: wrap; 
     gap: 5px;  
     flex-shrink: 1; 
-    
     justify-content: center; 
-    /* justify-content: space-between;  */
     align-items: center;
 }
 
@@ -68,21 +66,18 @@ header .expand, .option{
 
 /* Main */
 main .content{ 
-    background-color: tomato;
+    background-color: black;
     height: 80vh;
 } 
 
-main .container-photo{ 
-    border: 2px solid yellow; 
+main .container-photo{  
     height: 100%; 
-    
     width: 80%; 
     margin: 0 auto; 
     overflow: auto;
 }  
 
 main .container-photo .photo{ 
-    border: 2px solid black; 
     height: 20%;
     min-width: 300px;
     width: 10%; 
@@ -102,45 +97,58 @@ main .container-photo .photo p{
     background-color: black;
     
 }
+/* main */ 
 
+/* Footer */
 
-
-
-
-
-
-
-
-
-
-footer .general-setting{
-    border: 2px solid royalblue; 
+footer .general-setting{ 
     width: 100%;
     height: 10vh;
-
+    background-color: rgb(34, 34, 34);
     vertical-align: middle;
 }  
 
 
-footer .general-setting .flex{  
-    /* align-items: center; */
-    /* justify-content: center;  */
-    
+footer .general-setting .flex{      
     justify-content: space-between;
 } 
 
 footer .general-setting .nav .nav-left, .nav-center{ 
-    /* border: 2px solid black;  */
-    font-size: 2rem; 
+    font-size: 1.5rem; 
     height: 10vh;
     text-align: center; 
 } 
 
-footer .general-setting .nav .nav-center{
-    border: 2px solid black; 
+footer .general-setting .nav .nav-center{ 
     width: 50%; 
 
+}  
+
+footer .general-setting .nav .nav-center #bg-green{
+    color: goldenrod;
+} 
+
+footer  i{
+    color: white;
 }
+
+footer p{
+    color: white;
+}
+
+footer .nav-right{ 
+
+    padding: 10px;  
+    height: 10vh;
+    background-color: silver;
+} 
+
+footer .nav-right p{
+    color: red;
+}
+
+
+
  
 
 
