@@ -2,4 +2,46 @@
     margin:0;
     padding: 0;
     box-sizing: border-box;
+} 
+
+.clearfix{
+    content: ""; 
+    display: table;
+    clear: both;
+} 
+
+.flex{
+    display: flex;
+}
+
+header .photo-view{
+    border: 2px solid black; 
+    background-color: black;
+    height: 10vh;
+}
+
+header .view{
+    flex-direction: row-reverse;
+    gap: 10px;
+} 
+
+header .expand, .option{
+    color: white;
+    background-color: silver;
+    padding: .5rem;
+    border-radius: 10px; 
+    
+}
+
+
+main .content{
+    border: 2px solid tomato; 
+
+    height: 80vh;
+}
+
+footer .general-setting{
+    border: 2px solid royalblue; 
+
+    height: 10vh;
 }
