@@ -27,7 +27,8 @@
     gap: 5px;  
     flex-shrink: 1; 
     flex-direction: row; 
-    justify-content: center;
+    justify-content: center; 
+    justify-content: space-between;
 }
 
     
@@ -39,7 +40,7 @@
 header .photo-view{
     border: 2px solid black; 
     background-color: black; 
-    width: 100vw;
+    width: 100%;
     height: 10vh;
 }
 
@@ -89,9 +90,12 @@ main .container-photo .photo{
 
 main .container-photo .photo p{
     bottom: 0; 
-    background-color: black;
     opacity: .5; 
-    color: white;
+    color: white; 
+    border-radius: 5px; 
+    padding: 3px;
+    background-color: black;
+    
 }
 
 
@@ -106,6 +110,34 @@ main .container-photo .photo p{
 
 footer .general-setting{
     border: 2px solid royalblue; 
-
+    width: 100%;
     height: 10vh;
+}  
+
+
+footer .general-setting .nav .nav-left{
+    border: 2px solid blue; 
+    height: 10vh; 
+
+    width: 20%;
+} 
+
+footer .general-setting .nav .nav-center{
+    border: 2px solid blue; 
+    height: 10vh; 
+
+    width: 40%;
+} 
+
+footer .general-setting .nav .nav-right{
+    border: 2px solid blue; 
+    height: 10vh; 
+
+    width: 20%;
 }
+
+
+
+
+
+
